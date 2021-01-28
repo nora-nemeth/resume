@@ -12,9 +12,17 @@ body {
 
 }
 
-.experience {
+.education {
 	margin-top: 100px;
 
+}
+
+.experience {
+	margin-top: 100px;
+}
+
+.fa-4x {
+	color: rgb(102, 102, 102);
 }
 
 hr {
@@ -56,6 +64,15 @@ li.active a {
 	font-size: 25px;
 }	
 
+.part_title {
+	font-size: larger;
+	font-weight: 300;
+}
+
+.perchantage_progress {
+	margin-right: 15%;
+}
+
 #profilePhoto {
 	height: 150px;
 	width: 100px;
@@ -64,4 +81,24 @@ li.active a {
 ul {
 	list-style: none;
 }		
+
+.progress_bar h4{
+	color:#4d4d4d !important;
+	font-weight:300;
+	font-size: large;
+	margin-bottom: -20px;
+	
+}
+.progress_bar .progress {
+  height: 4px !important;
+	margin-bottom: 3%;
+}
+.progress_bar .progress-bar{
+	background:#1dc0c0;
+}
+.perchantage{
+	font-size: medium;
+	font-weight:400;
+	color:#686868;
+}
 
