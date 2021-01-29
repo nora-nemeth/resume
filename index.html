@@ -11,24 +11,21 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
       />
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"
       rel="stylesheet"
-      />
-  </head>
+			/>
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+			<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">  
+	</head>
   <body>
-    <!-- Header section -->
-    <div class="container-fluid border border-dark p-0 m-0">
-      <div class="jumbotron bg-light"></div>
-    </div>
     <!-- Main part -->
-    <div class="container-fluid border border-dark p-0 m-0">
+    <div class="container-fluid p-0 m-0">
       <div class="row">
         <!-- Sidebar -->
-        <div class="col-3 border border-dark bg-light" id="menu_col">
-          <img src="profile_photo.jpg" alt="profilePhoto" id="profilePhoto" />
-          <div id="nav_links" class="mt-5">
+        <div class="col-3 bg-light position-fixed" id="menu_col">
+          <div id="nav_links">
             <ul class="m-0 p-0">
               <li class="m-3">
                 <a href="#about">About</a>
@@ -49,56 +46,70 @@
           </div>
         </div>
         <!-- About section -->
-        <div class="col-9 border border-dark">
-          <div class="row ml-5" id="name">Nora Nemeth</div>
-          <div class="row">
-            <div class="col-1 ml-5 mt-4">
-              <i class="bi bi-telephone">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-telephone"
-                  viewBox="0 0 16 16"
-                  >
-                  <path
-                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                    />
-                </svg>
-              </i>
-            </div>
-            <div class="col ml-0 pl-0 mt-4 mb-3">+36 70 884 1413</div>
-          </div>
-          <div class="row">
-            <div class="col-1 ml-5">
-              <i class="bi bi-envelope">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-envelope"
-                  viewBox="0 0 16 16"
-                  >
-                  <path
-                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
-                    />
-                </svg>
-              </i>
-            </div>
-            <div class="col ml-0 pl-0">nemethnora1996@gmail.com</div>
-          </div>
+        <div class="col-9 main_part">
+					<div class="row ml-5" id="name">Nora Nemeth</div>
+
+					<div class="row">
+
+
+					<div class="col-6 access">
+						<!-- telephone number -->
+						<div class="row">
+							<div class="col-1 ml-5 mt-4">
+								<i class="bi bi-telephone">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-telephone"
+										viewBox="0 0 16 16"
+										>
+										<path
+											d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+											/>
+									</svg>
+								</i>
+							</div>
+							<div class="col ml-0 pl-0 mt-4 mb-3 font">+36 70 884 1413</div>
+						</div>
+						<!-- email address -->
+						<div class="row">
+							<div class="col-1 ml-5">
+								<i class="bi bi-envelope">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-envelope"
+										viewBox="0 0 16 16"
+										>
+										<path
+											d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+											/>
+									</svg>
+								</i>
+							</div>
+							<div class="col ml-0 pl-0 font">nemethnora1996@gmail.com</div>
+						</div>
+
+					</div>
+
+					<div class="col-4">
+						<img src="profile_photo.jpg" alt="profile_photo" id="profile_photo" class="img-responsive"/>
+					</div>
+				</div>
+
+
           <div class="row pb-0 justify-content-center about" id="about">
             About Me
           </div>
           <div class="mr-5 ml-5">
             <hr />
           </div>
-          <div class="row m-5">
-            I started learning Front end developement in 2020 august. During
-            this time I learnt HTML5, CSS and JavaScript.<br />
-            Next to these I dived into Bootstrap, Github and React.
+          <div class="row m-5 font">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </div>
           <!-- Experience section -->
           <div class="row pb-0 justify-content-center about" id="experience">
@@ -109,26 +120,26 @@
           </div>
           <div class="m-5">
             <div class="row mb-4">
-              <div class="col-3">2017 - 2020</div>
-              <div class="col-9">
+              <div class="col-3 font">2017 - 2020</div>
+              <div class="col-9 font">
                 BRC-HAS Neuronal Plasticity Research Group
               </div>
             </div>
             <div class="row mb-4">
-              <div class="col-3">2019</div>
-              <div class="col-9">Magyar Telekom Plc.</div>
+              <div class="col-3 font">2019</div>
+              <div class="col-9 font">Magyar Telekom Plc.</div>
             </div>
             <div class="row mb-4">
-              <div class="col-3">2018</div>
-              <div class="col-9">NKM National Utilities</div>
+              <div class="col-3 font">2018</div>
+              <div class="col-9 font">NKM National Utilities</div>
             </div>
             <div class="row mb-4">
-              <div class="col-3">2016</div>
-              <div class="col-9">Audi Hungaria Ltd.</div>
+              <div class="col-3 font">2016</div>
+              <div class="col-9 font">Audi Hungaria Ltd.</div>
             </div>
             <div class="row mb-4">
-              <div class="col-3">2016 - 2017</div>
-              <div class="col-9">
+              <div class="col-3 font">2016 - 2017</div>
+              <div class="col-9 font">
                 HAS-SZTE Cervical Neuronal Network Research Group
               </div>
             </div>
@@ -142,14 +153,14 @@
           </div>
           <div class="m-5">
             <div class="row mb-4">
-              <div class="col-3">2015 - 2020</div>
-              <div class="col-9">
+              <div class="col-3 font">2015 - 2020</div>
+              <div class="col-9 font">
                 Biology B.Sc. Faculty of Science and Informatics University of Szeged
               </div>
             </div>
             <div class="row mb-4">
-              <div class="col-3">2010 - 2015</div>
-              <div class="col-9">Kazinczy Ferenc Secondary Grammar School Győr</div>
+              <div class="col-3 font">2010 - 2015</div>
+              <div class="col-9 font">Kazinczy Ferenc Secondary Grammar School Győr</div>
             </div>
           </div>
           <!-- Skills section -->
@@ -161,7 +172,7 @@
           </div>
           <div class="m-5">
             <div class="row">
-              <div class="col part_title">
+              <div class="col part_title font">
                 Programming languages & tools
               </div>
             </div>
@@ -174,8 +185,8 @@
                 <li class="list-inline-item mr-5"><i class="fab fa-npm fa-4x"></i></li>
                 <li class="list-inline-item mr-5"><i class="fab fa-github fa-4x"></i></li>
               </ul>
-						</div>
-						<!-- Soft skills section -->
+            </div>
+            <!-- Soft skills section -->
             <div class="row mt-5">
               <div class="col mb-4 part_title">
                 Soft skills
@@ -185,7 +196,7 @@
               <div class="col">
                 <!--Progress Item One-->
                 <div class="progress_bar pb-3 pt-2">
-                  <h4>Interpersonal skills</h4>
+                  <h4 class="font">Interpersonal skills</h4>
                   <div class="perchantage_progress">
                     <small class="d-flex justify-content-end perchantage">90%</small>
                     <div class="progress">
@@ -196,7 +207,7 @@
                 </div>
                 <!--Progress Item Two-->
                 <div class="progress_bar pb-3">
-                  <h4>Time management</h4>
+                  <h4 class="font">Time management</h4>
                   <div class="perchantage_progress">
                     <small class="d-flex justify-content-end perchantage">80%</small>
                     <div class="progress">
@@ -207,7 +218,7 @@
                 </div>
                 <!--Progress Item three-->
                 <div class="progress_bar pb-3">
-                  <h4>Agility</h4>
+                  <h4 class="font">Agility</h4>
                   <div class="perchantage_progress">
                     <small class="d-flex justify-content-end perchantage">85%</small>
                     <div class="progress">
@@ -218,7 +229,7 @@
                 </div>
                 <!--Progress Item three-->
                 <div class="progress_bar pb-3">
-                  <h4>Analytical thinking</h4>
+                  <h4 class="font">Analytical thinking</h4>
                   <div class="perchantage_progress">
                     <small class="d-flex justify-content-end perchantage">75%</small>
                     <div class="progress">
@@ -229,7 +240,7 @@
                 </div>
                 <!--Progress Item four-->
                 <div class="progress_bar">
-                  <h4>Open-mindedness</h4>
+                  <h4 class="font">Creativity</h4>
                   <div class="perchantage_progress">
                     <small class="d-flex justify-content-end perchantage">90%</small>
                     <div class="progress">
@@ -239,12 +250,22 @@
                   </div>
                 </div>
               </div>
+						</div>
+						<!-- Interests part -->
+            <div class="row pb-0 justify-content-center about" id="interests">
+              Interests
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div class="row">
+              <div class="col mt-5 mb-5 font">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Interests section -->
-    </div>
+		</div>
     </div>
     </div>
   </body>
